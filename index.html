@@ -16,47 +16,57 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row justify-content-end">
-            <div class="col-md-3 col-12 p-3 text-center fw-bold">
-                <button class="btn btn-primary fs-2">RESET</button>
+        <div class="row justify-content-end" id="MobileButton">
+            <div class="col-3 p-3 text-center fw-bold">
+                <button onclick="zeroScores()" class="btn btn-primary fs-2">RESET</button>
             </div>
         </div>
     </header>
 
-    <section class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class=" col-md-9 col-12 p-5 bg-dark bg-opacity-25" id="boxHeight">
-                <div class="row justify-content-center align-items-center">
-                    <div class="text-center col-md-6">
-                        <div class="fw-bold fs-2 text-center mt-md-0">HOME</div>
-                        <div id="homeScore">0</div>
+    <section class="container-fluid">
+        <div id="MobileView" class="row justify-content-center">
+            <div class=" col-sm-8 col-12 p-5 bg-primary bg-opacity-25" id="boxHeight">
+                <div class="row justify-content-center align-content-center">
+                    <div class="text-center col-sm-6 col-12" id="mobileColumn">
+                        <h1 class="fw-bold text-center mt-md-0">HOME</h1>
+                        <h1 id="total-home-score">0</h1>
                     </div>
-                    <div class="text-center col-md-6 mt-md-0 mt-5">
-                        <div class="fw-bold fs-2 text-center">HOME</div>
-                        <div id="awayScore">0</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class=" col-md-9 col-12 p-5 bg-dark bg-opacity-25" id="boxHeight">
-                <div class="row justify-content-center align-items-center">
-                    <div class="text-center col-md-6">
-                        <div class="fw-bold fs-2 text-center mt-md-0">HOME</div>
-                        <div id="homeScore">0</div>
-                    </div>
-                    <div class="text-center col-md-6 mt-md-0 mt-5">
-                        <div class="fw-bold fs-2 text-center">HOME</div>
-                        <div id="awayScore">0</div>
+                    <div class="text-center col-sm-6 col-12" id="mobileColumn">
+                        <h1 class="fw-bold text-center">HOME</h1>
+                        <h1 id="total-away-score">0</h1>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <footer class="container-fluid">
+        <div class="row justify-content-center text-center">
+            <div class="col-6 col-lg-4 p-3">
+                <button onclick="addScore(1, 0)" class="btn btn-primary p-2">HOME +1</button>
+            </div>
+            <div class="col-6 col-lg-4 p-3">
+                <button onclick="addScore(0, 1)" class="btn btn-primary p-2">AWAY +1</button>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-4 col-6 p-3">
+                <button onclick="addScore(3, 0)" class="btn btn-primary p-2">HOME +3</button>
+            </div>
+            <div class="col-lg-4 col-6 p-3">
+                <button onclick="addScore(0, 3)" class="btn btn-primary p-2">AWAY +3</button>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center ">
+            <div class="col-lg-4 col-6 p-3">
+                <button onclick="addScore(-1, 0)" class="btn btn-primary p-2">HOME -1</button>
+            </div>
+            <div class="col-lg-4 col-6 p-3">
+                <button onclick="addScore(0, -1)" class="btn btn-primary p-2">AWAY -1</button>
+            </div>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

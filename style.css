@@ -8,3 +8,36 @@ body {
     min-height: 45dvh;
     align-self: center;
 }
+
+footer {
+    color: lightgrey
+}
+
+#total-away-score {
+    font-size: 8em;
+}
+
+#total-home-score {
+    font-size: 8em;
+}
+
+@media screen AND (max-width: 576px) {
+    #MobileView {
+        justify-content: space-between;
+    }
+
+    #total-home-score {
+        font-size: 5em;
+    }
+
+    #total-away-score {
+        font-size: 5em;
+    }
+
+    #boxHeight {
+        min-height: 30dvh;
+        align-self: center;
+    }
+
+
+}
