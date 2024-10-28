@@ -1,8 +1,10 @@
 body {
-    background-color: lightcoral;
-    background: url(https://wallpapers.com/images/featured/aesthetic-nba-ba4w0pe75y02ux5q.jpg);
+    background-image: url(backgroundIMG.jpg);
     background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
 }
+
 
 #boxHeight {
     min-height: 45dvh;
